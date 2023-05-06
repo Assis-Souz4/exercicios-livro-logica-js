@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Farmacia-JS</title>
+</head>
+<body>
+
+   <h1>Farmacia-jS</h1>
+
+   <form action="#" style="display: grid; grid-template-columns: 100px 200px;gap: 5px;">
+
+      <label for="inMedicamento">Medicamento:</label>
+      <input type="text" id="inMedicamento">
+      <label for="inPreco">Preço(R$):</label>
+      <input type="text" id="inPreco">
+      <input type="submit" value="Promoção">
+
+   </form>
+
+   <h3>Nome do produto em promoção</h3>
+   <h4>Mostrar promoção</h4>
+
+   <script>
+
+   const frm = document.querySelector('form');
+   const respH3 = document.querySelector('h3');
+   const respH4 = document.querySelector('h4');
+
+   frm.addEventListener('submit', (evento)=>{
+      const medicamento = frm.inMedicamento.value;
+      const preco = Math.floor(Number(frm.inPreco.value));
+
+      respH3.innerText = `Promoção => ${medicamento}`;
+      respH4.innerText = `Leve 2 por apenas R$${(preco * 2).toFixed(2)}`
+
+      evento.preventDefault();
+   })
+
+   </script>
+</body>
+</html>

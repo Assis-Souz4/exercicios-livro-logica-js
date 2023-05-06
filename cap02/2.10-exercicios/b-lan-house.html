@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Lan House-JS</title>
+</head>
+
+<body>
+
+   <h1>Lan House JS</h1>
+
+   <form action="#" style="display: grid; grid-template-columns: 140px 200px;gap: 5px;">
+
+      <label for="inValorMin">Valor por 15min(R$):</label>
+      <input type="text" id="inValorMin">
+      <label for="inTempoUso">Tempo de uso:</label>
+      <input type="text" id="inTempoUso">
+      <input type="submit" value="Valor a pagar" style="cursor: pointer;">
+
+   </form>
+
+   <h3></h3>
+
+   <script>
+
+      const frm = document.querySelector('form');
+      const respH3 = document.querySelector('h3');
+
+      frm.addEventListener('submit', (evento) => {
+
+         const valorMin = Number(frm.inValorMin.value);
+         const tempoUso = Number(frm.inTempoUso.value);
+
+         const pagar = Math.ceil(tempoUso / 15) * valorMin;
+
+         respH3.innerText = `Valor a pagar R$: ${pagar.toFixed(2)}`;
+
+         evento.preventDefault();
+      })
+
+   </script>
+</body>
+
+</html>
