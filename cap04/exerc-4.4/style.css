@@ -20,8 +20,17 @@ main{
    display: block;
 }
 .cont__principal{
-   padding-top: 35px;
+   padding: 35px 10px;
 }
-form{
-  
+.inpt__hora{
+   max-width: 20%;
+   margin: 15px 0;
+}
+.btn{
+   display: block;
+   cursor: pointer;
+   padding: 2.5px;
+}
+h3{
+   padding: 30px 0;
 }
