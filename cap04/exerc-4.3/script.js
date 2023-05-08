@@ -13,6 +13,6 @@ frm.addEventListener('submit', (e)=>{
    }else{
       respH3.innerText = `${nome}: Seu pesso ideal é: ${peso = (21 * Math.pow(altura, 2)).toFixed(2)}kg `;
    }
-
+   
    e.preventDefault();
 })
