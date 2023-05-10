@@ -1,0 +1,15 @@
+main{
+   max-width: 600px;
+   display: grid;
+   grid-template-columns: 253px auto;
+   border: solid 2px grey;
+   margin: 20px auto;
+}
+.btn{
+   display: block;
+   margin: 15px 0;
+}
+section{
+   padding: 0 20px;
+   background-color: lightgray;
+}
