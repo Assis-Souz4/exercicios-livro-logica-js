@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: grid;
+  justify-content: center;
+}
+main { 
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 500px 400px;
+}
+.cont__img > img {
+  width: 100%;
+  display: block;
+}
+.cont__principal {
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+div > h1 {
+  text-align: center;
+}
+form > label {
+  display: block;
+}
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+}
+.respH3{
+   display: inline-block;
+}
+.respH3 > span{
+   display: inline-block;
+   color: red;
+}
+#inNumero{
+   max-width: 18%;
+}
+
