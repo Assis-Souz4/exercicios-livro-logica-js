@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <form action="#">
+            <label for="inNome">Descrição da Conta:</label>
+            <input type="text" id="inNome" class="input" required>
+
+            <label for="inValor">Valor a Pagar (R$):</label>
+            <input type="number" id="inValor" class="input">
+
+            <p>
+                <input type="submit" class="btn" id="InInput">
+                <input type="reset" class="btn" value="Limpar" id="inInput" onclick="limparResp()">
+            </p>
+        </form>
+
+        <div id="limpa">
+            <span class="resp1 respDiv"></span>
+            <hr>
+            <span class="resp2 respDiv"></span>
+        </div>
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
