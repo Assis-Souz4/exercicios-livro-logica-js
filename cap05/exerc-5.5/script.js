@@ -8,7 +8,7 @@ titulo.appendChild(textoTitulo);
 container.insertBefore(titulo, form);
 
 document.querySelector('h1').style.color= 'rgba(0,0,255,1)';
-document.querySelector('.resp1').style.color= 'red';
+document.querySelector('.resp1').style.color= 'blue';
 document.querySelector('.resp2').style.color= 'red';
 
 const resp1 = document.querySelector('.resp1');
@@ -24,9 +24,9 @@ form.addEventListener('submit', (e) => {
   const valor = Number(form.inValor.value);
 
   numContas++;
-  resp1.innerText += `${conta} - R$${valor}\n`
-  valorConta = valorConta + valor;
-  resposta = `${numContas} Contas - R$ ${valorConta}`;
+  resp1.innerText += `${conta} - R$${valor.toFixed(2)}\n`
+  valorConta = Number(valorConta + valor);
+  resposta = `${numContas} Contas - R$ ${valorConta.toFixed(2)}`;
   resp2.innerText = resposta;
 
 })
