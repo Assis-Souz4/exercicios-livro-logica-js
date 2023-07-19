@@ -17,3 +17,11 @@ for (const numero of numeros) {
 numeros.forEach((numero, index) => {
     console.log(numero, index);
 });
+
+let soma = 0;
+numeros.forEach((numero) => {
+  soma += numero
+});
+console.log('soma = ' + soma);
+
+console.log('#' .repeat(10));
