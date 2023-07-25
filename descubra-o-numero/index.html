@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubra o Número</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main class="container">
+        <section class="imagem">
+            <img src="./num-aleatorios.jpg" alt="">
+        </section>
+        <section class="principal">
+            <h1>Jogo Descubra o Número</h1>
+            <hr>
+            <form action="#">
+                <label for="inNum">
+                    Número:
+                    <input type="number" min="1" max="10" id="inNum" required autofocus>
+                    <input type="submit" value="Apostar" id="btnSubmit">
+                    <input type="button" value="Jogar Novamente" id="btnNovo" click="recarregarAPagina()">
+                </label>
+            </form>
+
+            <div class="respostas">
+                <pre class="erro"></pre>
+                <p class="chances"></p>
+                <p class="dicas">Dica: É um numero entre 1 e 10</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family= IBM+Plex+Mono & display =swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "IBM Plex Mono", monoespaçado;
+  font-weight: bold;
+}
+img {
+  max-width: 100%;
+}
+.container {
+  width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 20px 0;
+  margin: 0 auto;
+  gap: 20px;
+}
+form {
+  padding-top: 40px;
+}
+.respostas {
+  padding-top: 40px;
+  display: grid;
+  gap: 10px;
+}
