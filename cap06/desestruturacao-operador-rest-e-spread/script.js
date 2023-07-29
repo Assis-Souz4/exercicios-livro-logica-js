@@ -14,7 +14,7 @@
 {
   const numeros = [1, 2, 3, 4];
   const [a, e, i, o, u] = numeros;
-  console.log(`${a}, ${e}, ${i}, ${o},${u}`); //1, 2, 3, 4,undefinedr
+  console.log(`${a}, ${e}, ${i}, ${o},${u}`); //1, 2, 3, 4,undefined
 }
 
 {
@@ -24,4 +24,23 @@
   console.log(`${um}`);
   console.log(`${dois}`);
   console.log(`${resto}`);
+}
+
+{
+    const pessoas = {nome: 'luiz', idade: 25};77
+    const pessoas2 = {...pessoas, endereco: 'rua 10, casa 105'};
+    console.log(pessoas2);//{ nome: 'luiz', idade: 25, endereco: 'rua 10, casa 105' }
+}
+
+{
+    let pacientes = ['anna', 'juan'];
+    pacientes = ['bruno', ...pacientes];
+    pacientes = [...pacientes, 'robert'];
+    console.log(pacientes);
+
+    const pacientes2 = [...pacientes];
+    console.log(pacientes);
+
+    const pacientes3 = pacientes.slice();
+    console.log(pacientes3);
 }
