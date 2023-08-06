@@ -22,17 +22,17 @@
             <form action="#">
                 <label for="inModelo">
                     Modelo:
-                    <input type="text" id="inModelo" autofocus>
+                    <input type="text" id="inModelo" autofocus required>
                 </label>
                 <label for="inPreco">
                     Preço:
-                    <input type="number" id="inPreco">
+                    <input type="text" id="inPreco" autofocus>
                     <input type="submit" value="Adicionar">
                 </label>
                 <label for="botoes">
-                    <input type="submit" value="Listar Todos">
-                    <input type="submit" value="Filtrar por Preço">
-                    <input type="submit" value="Simular Promoção">
+                    <input type="button" value="Listar Todos" id="btnListar">
+                    <input type="button" value="Filtrar por Preço" id="btnFiltrar">
+                    <input type="button" value="Simular Promoção" id="btnPromo">
                 </label>
             </form>
             <pre></pre>
