@@ -45,3 +45,6 @@ label[for="botoes"] {
   flex-wrap: wrap;
   gap: 10px;
 }
+pre{
+  padding: 20px 0;
+}
