@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash Machine</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Phudu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <section class="principal">
+        <h1>Cash Machine</h1>
+        <hr>
+        <form action="#">
+            <label for="inSaque" id="inSaque">
+                Valor do Saque:
+                <input type="number" placeholder="R$ 0.0" min="0" id="inSaque" autofocus required>
+                <input type="submit" value="Sacar">
+            </label>
+            <label for="#" id="infoSaques">
+                <input type="button" value="Resumo" id="resumo">
+            </label>
+        </form>
+        <pre class="msgSaque"></pre>
+        <pre class="msgInfo"></pre>
+    </section>
+    <script src="./script.js"></script>
+</body>
+
+</html>
