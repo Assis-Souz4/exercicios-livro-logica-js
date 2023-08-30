@@ -22,9 +22,44 @@ form.addEventListener("submit", (e) => {
 
   form.reset();
   form.inClube.focus();
-  msgTemp()
-
-  console.log(nome, clubes);
+  msgTemp();
 });
 
-form.btnListar.addEventListener("click", () => {});
+form.btnListar.addEventListener("click", () => {
+  const verificaArr = clubes;
+
+  if (verificaArr.length === 0) {
+    form.reset();
+    form.inClube.focus();
+    msgTemp();
+    return (msg.innerText = `Lista de Clubes vazia, Add Clubes!!`);
+  }
+
+  let lista = "";
+
+  for (const clube of verificaArr) {
+    lista += clube + "\n";
+  }
+
+  resp.innerText = lista;
+});
+
+form.btnMostrar.addEventListener("click", (e) => {
+  const mostraArr = clubes.length;
+
+  if (mostraArr == 0 || mostraArr % 2 == 1) {
+    form.reset();
+    form.inClube.focus();
+    msgTemp();
+    return (msg.innerText = `Clubes insuficiente, deve haver número par de clubes!!`);
+  }
+
+  let jogos = "";
+
+  const ultimo = mostraArr - 1;
+
+  for (i = 0; i < mostraArr / 2; i++) {
+    jogos += clubes[i] + " x " + clubes[ultimo - i] + "\n";
+  }
+  resp.innerText = jogos;
+});
